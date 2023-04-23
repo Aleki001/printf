@@ -9,7 +9,7 @@ int print_str(va_list str)
 	int i = 0;
 	char *string;
 
-	string = va_arg(str, char *)
+	string = va_arg(str, char *);
 	if (string == NULL)
 	{
 		string = "(null)";
