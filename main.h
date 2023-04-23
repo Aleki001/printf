@@ -19,8 +19,9 @@ typedef struct format_specifier format_sp;
 
 int _printf(const char *format, ...);
 int print(char c);
-
-
+int print_char(va_list ch);
+int print_percent(void);
+int print_str(va_list str);
 
 
 
