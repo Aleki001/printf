@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  * find_function - function that finds formats for _printf
+  * select_function - function that finds formats for _printf
   * calls the corresponding function.
   * @format: format (char, string, int, decimal)
   * Return: NULL or function associated ;
@@ -35,7 +35,7 @@ int (*select_format(const char *format))(va_list)
 int _printf(const char *format, ...)
 {
     unsigned int i = 0;
-    unsigned count = 0;
+    unsigned int count = 0;
 	va_list list;
 	int (*func_sp)(va_list);
 
@@ -61,19 +61,13 @@ int _printf(const char *format, ...)
 			continue;
 		}
 		if (!format[i + 1])
-		{
 			return (-1);
-		}
 		print(format[i]);
 		count++;
 		if (format[i + 1] == '%')
-		{
 			i += 2;
-		}
 		else
-		{
 			i++;
-		}
 	}
 	va_end(list);
 	return (count);
