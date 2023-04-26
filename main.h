@@ -30,7 +30,7 @@ int write_hex(unsigned int integer, unsigned int flag);
 int write_X(va_list X);
 int write_x(va_list x);
 int string_rev(va_list s);
-
+int write_rot13(va_list string);
 
 
 
