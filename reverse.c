@@ -12,8 +12,10 @@ int string_rev(va_list s)
 	char *string;
 
 	string = va_arg(s, char *);
+
 	if (string == NULL)
 		string = "null";
+
 	/* find string length */
 	for (i = 0; string[i]; i++)
 	{
@@ -23,8 +25,8 @@ int string_rev(va_list s)
 	for (j = (i - 1); j >= 0; j--)
 	{
 		print(string[j]);
-       	}
+	}
 	print('\0');
 
-	return(i);
+	return (i);
 }
