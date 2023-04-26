@@ -12,12 +12,10 @@ int string_rev(va_list s)
 	char *string;
 
 	string = va_arg(s, char *);
-<<<<<<< HEAD
 
-=======
 	if (string == NULL)
 		string = "null";
->>>>>>> 7d2bfd61906d2ef881d59eaa2a47a7525c0001d5
+
 	/* find string length */
 	for (i = 0; string[i]; i++)
 	{
