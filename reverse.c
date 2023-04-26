@@ -11,8 +11,9 @@ int string_rev(va_list s)
 	int i, j;
 	char *string;
 
-	string = va_arg(s, char *);	
-	
+	string = va_arg(s, char *);
+	if (string == NULL)
+		string = "null";
 	/* find string length */
 	for (i = 0; string[i]; i++)
 	{
