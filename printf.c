@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	for (i; format[i] ;)
+	for (; format[i] ;)
 	{
 		for ( ; format[i] != '%' && format[i]; i++)
 		{
