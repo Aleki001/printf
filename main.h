@@ -26,7 +26,9 @@ int write_dec(va_list dec);
 int write_bin(va_list bin);
 int write_octal(va_list octal);
 int write_unsigned(va_list ui);
-
+int write_hex(unsigned int integer, unsigned int flag);
+int write_X(va_list X);
+int write_x(va_list x);
 
 
 

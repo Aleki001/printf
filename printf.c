@@ -16,6 +16,8 @@ int (*select_format(const char *format))(va_list)
 		{"b", write_bin},
 		{"o", write_octal},
 		{"u", write_unsigned},
+		{"X", write_X},
+		{"x", write_x},
 		{NULL, NULL}
 	};
 
