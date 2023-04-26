@@ -7,7 +7,7 @@
 int write_unsigned(va_list ui)
 {
 	unsigned int digit, number, i;
-	int n;
+	unsigned int n;
 	unsigned int length = 0, count = 0, powTen = 1;
 	n = va_arg(ui, int);
 
