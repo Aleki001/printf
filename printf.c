@@ -18,6 +18,7 @@ int (*select_format(const char *format))(va_list)
 		{"u", write_unsigned},
 		{"X", write_X},
 		{"x", write_x},
+		{"r", string_rev},
 		{NULL, NULL}
 	};
 
