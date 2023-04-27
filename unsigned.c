@@ -10,16 +10,10 @@ int write_unsigned(va_list ui)
 	unsigned int n;
 	unsigned int length = 0, count = 0, powTen = 1;
 	n = va_arg(ui, int);
+	number = n;
 
 	if (n != 0)
 	{
-		if (n < 0)
-		{
-			print('-');
-			count++;
-		}
-		number = n;
-
 		while (number != 0)
 		{
 			number /= 10;
@@ -33,14 +27,7 @@ int write_unsigned(va_list ui)
 		for (i = 1; i <= length; i++)
 		{
 			digit = n / powTen;
-			if (n < 0)
-		{
-				print((digit * -1) + '0');
-		}
-			else
-		{
-				print(digit + '0');
-		}
+			print(digit + '0');
 			count++;
 
 			n -= digit * powTen;
