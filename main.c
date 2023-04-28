@@ -39,6 +39,8 @@ int main(void)
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
-    _printf("Reversed String:[%r]\n", "String");
+    _printf("%R", "Guvf fragrapr vf ergevrirq sebz in_netf!\n");
+    _printf("Complete the sentence: You %R nothing, Jon Snow.\n", "xabj");
+    _printf("Complete the sentence: You %R nothing, Jon Snow.\n", "");
     return (0);
 }
